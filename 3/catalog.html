@@ -10,12 +10,11 @@
 
 <body>
     <header class="page-header">
-        <h1 class="visually-hidden">Городок Седона</h1>
         <nav class="navigation">
             <a class="logo" href="index.html"><img src="images/logo.svg" width="140" height="70" alt="Городок Седона."></a>
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">Главная</a>
+                    <a class="navigation-link" href="index.html">Главная</a>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">О Cедоне</a>
@@ -36,7 +35,7 @@
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">Хочу сюда!</a>
+                    <a class="button-brown" href="#">Хочу сюда!</a>
                 </li>
             </ul>
         </nav>
@@ -45,7 +44,7 @@
     <main class="main-inner">
        <div class="filter">
         <header class="inner-header">
-            <h2 class="inner-header-title">Гостиницы Седоны</h2>
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -57,7 +56,7 @@
         </header>
 
         <section>
-            <h2 class="visually-hidden">Список гостиниц</h2>
+            <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter-hotel" action="https://echo.htmlacademy.ru/" method="get">
 
                 <fieldset class="catalog-filter-group">
@@ -122,15 +121,16 @@
                 </fieldset>
 
                 <div class="filter-button">
-                <button class="button-done" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
+                <button class="button-blue done" type="submit">Применить</button>
+                <button class="button-reset" type="reset">Сбросить</button>
                 </div>
             </form>
         </section>
        </div>
 
         <section class="select-filter">
-            <h2 class="select-filter-title">Найдено гостиниц: 38</h2>
+            <h2 class="visually-hidden">Результаты сортировки.</h2>
+            <p class="select-filter-title">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
@@ -160,8 +160,8 @@
                     </a>
                     <p class="hotel">Гостиница</p>
                     <p class="hotel">От 4000 ₽</p>
-                    <a class="button-more" href="#">Подробнее</a>
-                    <button class="button-like">В избранное</button>
+                    <a class="button-brown more" href="#">Подробнее</a>
+                    <button class="button-blue like">В избранное</button>
                     <p class="rating">Рейтинг: 8,5</p>
                 </li>
 
@@ -172,8 +172,8 @@
                     </a>
                     <p class="hotel">Гостиница</p>
                     <p class="hotel">От 5000 ₽</p>
-                    <a class="button-more" href="#">Подробнее</a>
-                    <button class="button-favorit" type="button">В избранном</button>
+                    <a class="button-brown more" href="#">Подробнее</a>
+                    <button class="button-favorite" type="button">В избранном</button>
                     <p class="rating">Рейтинг: 9,2</p>
                 </li>
 
@@ -184,8 +184,8 @@
                     </a>
                     <p class="hotel">Гостиница</p>
                     <p class="hotel">От 2500 ₽</p>
-                    <a class="button-more" href="#">Подробнее</a>
-                    <button class="button-like">В избранное</button>
+                    <a class="button-brown more" href="#">Подробнее</a>
+                    <button class="button-blue like">В избранное</button>
                     <p class="rating">Рейтинг: 6,9</p>
                 </li>
 
@@ -196,8 +196,8 @@
                     </a>
                     <p class="hotel">Гостиница</p>
                     <p class="hotel">От 1500 ₽</p>
-                    <a class="button-more" href="#">Подробнее</a>
-                    <button class="button-like">В избранное</button>
+                    <a class="button-brown more" href="#">Подробнее</a>
+                    <button class="button-blue like">В избранное</button>
                     <p class="rating">Рейтинг: 5,0</p>
                 </li>
         </section>
@@ -229,16 +229,16 @@
         </ol>
     </main>
 
-    <section class="subscription-footer">
+    <section class="subscription catalog">
         <h2 class="visually-hidden">Подписка.</h2>
         <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="email">Email</label>
-            <input type="email" id="email" placeholder="Ваш e-mail" name="subscribe-email" required>
-            <button class="button" type="submit">Подписаться</button>
+          <label class="visually-hidden" for="email">Email</label>
+          <input class="subscription-form-window" type="email" id="email" placeholder="Ваш e-mail" name="subscribe-email" required>
+          <button class="button-blue b-subscription" type="submit">Подписаться</button>
         </form>
-    </section>
+      </section>
     </main>
 
     <footer class="page-footer">
