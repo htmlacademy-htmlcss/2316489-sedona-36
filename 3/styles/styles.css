@@ -16,17 +16,20 @@
 
 body {
    font-family: "PT Sans", sans-serif;
-   font-size: 16px;
-   line-height: 24px;
+   font-size: 18px;
+   line-height: 21px;
    font-weight: 400;
    color: #000000;
    background-color: #f2f2f2;
+   margin: 0;
 }
 
-div {
+.wrapper {
    width: 1200px;
    background-color: #ffffff;
    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .visually-hidden {
@@ -45,36 +48,22 @@ div {
    list-style: none;
 }
 
-.navigation-link {
-   text-decoration: none;
-   color: #000000;
-}
-
+.navigation-link,
 .navigation-link-current {
    text-decoration: none;
    color: #000000;
 }
 
-.navigation-link-button {
-   font-size: 16px;
-   line-height: 20px;
-   font-weight: 700;
-   background-color: #756157;
-   border-radius: 4px;
-   color: #ffffff;
-   text-align: center;
-   text-transform: uppercase;
-   text-decoration: none;
-}
-
-.main-index {
-   color: #000000;
-}
-
 .main-banner {
+   background-color: #7db54f;
    background-image: url("../images/background.jpg");
    background-size: 100% auto;
    background-repeat: no-repeat;
+}
+
+.main-banner-image {
+margin: 0 auto;
+display: block;
 }
 
 .description-title {
@@ -95,46 +84,30 @@ div {
 .advantages-list {
    list-style: none;
    padding-left: 0;
+   text-align: center;
 }
 
 .advantages-title {
    font-size: 24px;
    line-height: 28px;
    font-weight: 700;
-   text-align: center;
    text-transform: uppercase;
    color: #ffffff;
 }
 
-.advantages-title-dark {
-   font-size: 24px;
-   line-height: 28px;
-   font-weight: 700;
-   text-align: center;
-   text-transform: uppercase;
+.dark {
    color: #000000;
 }
 
 .advantages-description {
-   font-size: 18px;
-   line-height: 21px;
-   text-align: center;
    color: #ffffff;
 }
 
-.advantages-title-dark {
-   font-size: 18px;
-   line-height: 21px;
-   font-weight: 700;
-   text-align: center;
+.advantages-description-dark {
    color: #333333;
 }
 
-.advantages-description-dark {
-   text-align: center;
-}
-
-.advantages-item-blue {
+.advantages-item-dark {
    background-color: #82b3d3;
 }
 
@@ -151,18 +124,18 @@ div {
    text-align: center;
 }
 
+.service-item{
+   background-color: rgba(131, 179, 211, 0.12);
+}
+
 .service-title {
    font-size: 24px;
    line-height: 28px;
    font-weight: 700;
    text-transform: uppercase;
-   color: #000000;
-
 }
 
 .service-description {
-   font-size: 18px;
-   line-height: 21px;
    color: #333333;
 }
 
@@ -179,20 +152,7 @@ div {
    color: #333333;
 }
 
-.hotel-search-button {
-   font-size: 20px;
-   line-height: 36px;
-   font-weight: 700;
-   background-color: #756157;
-   border-radius: 4px;
-   color: #ffffff;
-   text-align: center;
-   text-transform: uppercase;
-   text-decoration: none;
-}
-
 .subscription {
-   background-color: #000000;
    background-size: 100% auto;
    background-repeat: no-repeat;
    text-align: center;
@@ -222,7 +182,7 @@ div {
    line-height: 24px;
 }
 
-.catalog {
+.subscription-catalog {
    background-color: #ffffff;
    color: #000000;
 }
@@ -231,27 +191,6 @@ div {
    font-size: 22px;
    line-height: 26px;
    color: #333333;
-}
-
-
-.button-blue {
-   font-family: "PT Sans", sans-serif;
-   background-color: #82b3d3;
-   border-radius: 4px;
-   text-align: center;
-   text-transform: uppercase;
-   color: #ffffff;
-}
-
-.b-subscription {
-   font-size: 20px;
-   line-height: 36px;
-}
-
-.done,
-.like {
-   font-size: 16px;
-   line-height: 20px;
 }
 
 .footer-social-list {
@@ -291,20 +230,15 @@ div {
 }
 
 .catalog-filter-item {
-   font-size: 18px;
    line-height: 23px;
    list-style: none;
 }
 
 .control-input {
+   font-family: "PT Sans", sans-serif;
    font-size: 18px;
    line-height: 24px;
    color: #000000;
-}
-
-.filter-button {
-   font-size: 16px;
-   line-height: 20px;
 }
 
 .select-filter-title {
@@ -328,29 +262,7 @@ div {
 }
 
 .hotel {
-   font-size: 18px;
-   line-height: 21px;
    color: #333333;
-}
-
-.button-brown {
-   font-family: "PT Sans", sans-serif;
-   font-size: 16px;
-   line-height: 20px;
-   background-color: #756157;
-   border-radius: 4px;
-   text-align: center;
-   text-transform: uppercase;
-   color: #ffffff;
-   text-decoration: none;
-}
-
-.button-reset {
-   font-size: 16px;
-   line-height: 20px;
-   font-weight: 700;
-   color: #ffffff;
-   background-color: rgba(0, 0, 0, 0.);
 }
 
 .product-card {
@@ -358,18 +270,6 @@ div {
 }
 
 .product-card-link {
-   text-decoration: none;
-}
-
-.button-favorite {
-   font-size: 16px;
-   line-height: 20px;
-   background-color: #7db54f;
-   border-radius: 4px;
-   text-align: center;
-   text-transform: uppercase;
-   list-style: none;
-   color: #ffffff;
    text-decoration: none;
 }
 
@@ -383,22 +283,83 @@ div {
    font-size: 20px;
    line-height: 36px;
    border-radius: 4px;
+   font-weight: 700;
    list-style: none;
+   text-decoration: none;
 }
 
 .pagination-link-current {
    background-color: #f2f2f2;
    color: #000000;
    list-style: none;
+   text-decoration: none;
 }
 
 .pagination-link {
    background-color: #82b3d3;
    color: #ffffff;
    list-style: none;
+   text-decoration: none;
 }
 
 .pagination-link-none {
    background-color: #ffffff;
-   color: #000000;
+}
+
+.button {
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-decoration: none;
+   text-align: center;
+   border-radius: 4px;
+   color: #ffffff;
+}
+
+.button-want {
+   font-size: 16px;
+   line-height: 22px;
+   background-color: #756157;
+}
+
+.button-search {
+   font-size: 20px;
+   line-height: 36px;
+   background-color: #756157;
+}
+
+.button-subscribe {
+   font-size: 20px;
+   line-height: 36px;
+   background-color: #82b3d3;
+}
+
+.button-apply {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #82b3d3;
+}
+
+.button-reset {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.button-more {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #756157;
+}
+
+.button-favorite {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #82b3d3;
+}
+
+.button-like {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #7db54f;
 }
