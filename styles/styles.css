@@ -1,0 +1,365 @@
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../fonts/ptsans-400.woff2") format("woff2");
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 700;
+   src: url("../fonts/ptsans-700.woff2") format("woff2");
+   font-display: swap;
+}
+
+body {
+   font-family: "PT Sans", sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+   font-weight: 400;
+   color: #000000;
+   background-color: #f2f2f2;
+   margin: 0;
+}
+
+.wrapper {
+   width: 1200px;
+   background-color: #ffffff;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.visually-hidden {
+   display: none;
+}
+
+.navigation {
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.navigation-item {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 24px;
+   list-style: none;
+}
+
+.navigation-link,
+.navigation-link-current {
+   text-decoration: none;
+   color: #000000;
+}
+
+.main-banner {
+   background-color: #7db54f;
+   background-image: url("../images/background.jpg");
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+}
+
+.main-banner-image {
+margin: 0 auto;
+display: block;
+}
+
+.description-title {
+   font-size: 30px;
+   line-height: 36px;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.description-text {
+   font-size: 22px;
+   line-height: 26px;
+   text-align: center;
+   color: #333333;
+}
+
+.advantages-list {
+   list-style: none;
+   padding-left: 0;
+   text-align: center;
+}
+
+.advantages-title {
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.dark {
+   color: #000000;
+}
+
+.advantages-description {
+   color: #ffffff;
+}
+
+.advantages-description-dark {
+   color: #333333;
+}
+
+.advantages-item-dark {
+   background-color: #82b3d3;
+}
+
+.advantages-item {
+   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-center {
+   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.service-list {
+   list-style: none;
+   text-align: center;
+}
+
+.service-item{
+   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service-title {
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.service-description {
+   color: #333333;
+}
+
+.hotel-search-title {
+   font-size: 30px;
+   line-height: 36px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.hotel-search-description {
+   font-size: 22px;
+   line-height: 26px;
+   color: #333333;
+}
+
+.subscription {
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   text-align: center;
+}
+
+.subscription-index {
+   background-image: url("../images/backsubscribe.jpg");
+   color: #ffffff;
+}
+
+.subscription-title {
+   font-size: 30px;
+   line-height: 36px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.subscription-description {
+   font-size: 22px;
+   line-height: 26px;
+   color: #ffffff;
+}
+
+.subscription-form-window {
+   font-family: "PT Sans", sans-serif;
+   font-size: 18px;
+   line-height: 24px;
+}
+
+.subscription-catalog {
+   background-color: #ffffff;
+   color: #000000;
+}
+
+.subscription-description-catalog {
+   font-size: 22px;
+   line-height: 26px;
+   color: #333333;
+}
+
+.footer-social-list {
+   list-style: none;
+}
+
+.phone {
+   font-size: 40px;
+   line-height: 40px;
+   color: #000000;
+   text-decoration: none;
+}
+
+.breadcrumbs-link {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+.filter {
+   color: #ffffff;
+   background-color: #000000;
+   background-image: url(../images/backcatalog.jpg);
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+}
+
+.inner-header-title {
+   font-size: 60px;
+   line-height: 78px;
+   font-weight: 700;
+}
+
+.catalog-filter-title {
+   font-size: 20px;
+   line-height: 24px;
+   font-weight: 700;
+}
+
+.catalog-filter-item {
+   line-height: 23px;
+   list-style: none;
+}
+
+.control-input {
+   font-family: "PT Sans", sans-serif;
+   font-size: 18px;
+   line-height: 24px;
+   color: #000000;
+}
+
+.select-filter-title {
+   font-size: 30px;
+   line-height: 36px;
+   font-weight: 700;
+}
+
+.select-control {
+   font-family: "PT Sans", sans-serif;
+   font-size: 18x;
+   line-height: 21px;
+   color: #333333;
+}
+
+.product-card-title {
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: 700;
+   color: #000000;
+}
+
+.hotel {
+   color: #333333;
+}
+
+.product-card {
+   list-style: none;
+}
+
+.product-card-link {
+   text-decoration: none;
+}
+
+.rating {
+   font-size: 16px;
+   line-height: 20px;
+   color: #333333;
+}
+
+.pagination {
+   font-size: 20px;
+   line-height: 36px;
+   border-radius: 4px;
+   font-weight: 700;
+   list-style: none;
+   text-decoration: none;
+}
+
+.pagination-link-current {
+   background-color: #f2f2f2;
+   color: #000000;
+   list-style: none;
+   text-decoration: none;
+}
+
+.pagination-link {
+   background-color: #82b3d3;
+   color: #ffffff;
+   list-style: none;
+   text-decoration: none;
+}
+
+.pagination-link-none {
+   background-color: #ffffff;
+}
+
+.button {
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-decoration: none;
+   text-align: center;
+   border-radius: 4px;
+   color: #ffffff;
+}
+
+.button-want {
+   font-size: 16px;
+   line-height: 22px;
+   background-color: #756157;
+}
+
+.button-search {
+   font-size: 20px;
+   line-height: 36px;
+   background-color: #756157;
+}
+
+.button-subscribe {
+   font-size: 20px;
+   line-height: 36px;
+   background-color: #82b3d3;
+}
+
+.button-apply {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #82b3d3;
+}
+
+.button-reset {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.button-more {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #756157;
+}
+
+.button-favorite {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #82b3d3;
+}
+
+.button-like {
+   font-size: 16px;
+   line-height: 20px;
+   background-color: #7db54f;
+}
