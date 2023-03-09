@@ -21,7 +21,7 @@
                         <a class="navigation-link" href="#">О Cедоне</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
+                        <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
                     </li>
                 </ul>
                 <ul class="navigation-user">
@@ -31,6 +31,7 @@
                         </a>
                     </li>
                     <li class="navigation-user button-likes">
+                        <span class="number-of-elected">12</span>
                         <a class="navigation-link" href="#">
                             <span class="visually-hidden">Избранное.</span>
                         </a>
@@ -48,7 +49,10 @@
                     <h1 class="inner-header-title">Гостиницы Седоны</h1>
                     <ol class="breadcrumbs">
                         <li class="breadcrumbs-item">
-                            <a class="breadcrumbs-link" href="index.html">Главная</a>
+                            <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+                                <span class="visually-hidden">
+                                    <Главная.< /span>
+                            </a>
                         </li>
                         <li class="breadcrumbs-item">
                             <a class="breadcrumbs-link">Гостиницы</a>
@@ -125,7 +129,7 @@
                         </fieldset>
 
                         <div class="filter-button">
-                            <button class="button button-apply" type="submit">Применить</button>
+                            <button class="button button-apply button-light" type="submit">Применить</button>
                             <button class="button button-reset" type="reset">Сбросить</button>
                         </div>
                     </form>
@@ -143,17 +147,17 @@
                 </select>
 
                 <div class="result-display">
-                <a class="button-sort button-tile" href="#">
-                    <span class="visually-hidden">Показать карточки</span>
-                </a>
+                    <a class="button-sort button-tile" href="#">
+                        <span class="visually-hidden">Показать карточки</span>
+                    </a>
 
-                <a class="button-sort button-slide" href="#">
-                    <span class="visually-hidden">Показать один вариант</span>
-                </a>
+                    <a class="button-sort button-slide" href="#">
+                        <span class="visually-hidden">Показать один вариант</span>
+                    </a>
 
-                <a class="button-sort button-list" href="#">
-                    <span class="visually-hidden">Показать список</span>
-                </a>
+                    <a class="button-sort button-list" href="#">
+                        <span class="visually-hidden">Показать список</span>
+                    </a>
                 </div>
             </section>
 
@@ -168,7 +172,10 @@
                         <p class="hotel hotel-type">Гостиница</p>
                         <p class="hotel hotel-price">От 4000 ₽</p>
                         <a class="button button-more" href="#">Подробнее</a>
-                        <button class="button button-favorite">В избранное</button>
+                        <button class="button button-favorite button-light">В избранное</button>
+                        <div class="rating-stars starsfour">
+                            <span class="rating-star visually-hidden">4 звезды</span>
+                        </div>
                         <p class="rating">Рейтинг: 8,5</p>
                     </li>
 
@@ -182,6 +189,9 @@
                         <p class="hotel hotel-price">От 5000 ₽</p>
                         <a class="button button-more" href="#">Подробнее</a>
                         <button class="button button-like" type="button">В избранном</button>
+                        <div class="rating-stars starsfour">
+                            <span class="rating-star visually-hidden">4 звезды</span>
+                        </div>
                         <p class="rating">Рейтинг: 9,2</p>
                     </li>
 
@@ -194,7 +204,10 @@
                         <p class="hotel hotel-type">Гостиница</p>
                         <p class="hotel hotel-price">От 2500 ₽</p>
                         <a class="button button-more" href="#">Подробнее</a>
-                        <button class="button button-favorite">В избранное</button>
+                        <button class="button button-favorite button-light">В избранное</button>
+                        <div class="rating-stars starsthree">
+                            <span class="rating-star visually-hidden">3 звезды</span>
+                        </div>
                         <p class="rating">Рейтинг: 6,9</p>
                     </li>
 
@@ -207,7 +220,10 @@
                         <p class="hotel hotel-type">Гостиница</p>
                         <p class="hotel hotel-price">От 1500 ₽</p>
                         <a class="button button-more" href="#">Подробнее</a>
-                        <button class="button button-favorite">В избранное</button>
+                        <button class="button button-favorite button-light">В избранное</button>
+                        <div class="rating-stars starstwo">
+                            <span class="rating-star visually-hidden">2 звезды</span>
+                        </div>
                         <p class="rating">Рейтинг: 5,0</p>
                     </li>
             </section>
@@ -218,15 +234,15 @@
                 </li>
 
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
+                    <a class="pagination-link button-light" href="#">2</a>
                 </li>
 
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">3</a>
+                    <a class="pagination-link button-light" href="#">3</a>
                 </li>
 
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">4</a>
+                    <a class="pagination-link button-light" href="#">4</a>
                 </li>
 
                 <li class="pagination-item">
@@ -234,7 +250,7 @@
                 </li>
 
                 <li class="pagination-item">
-                    <a class="pagination-link">10</a>
+                    <a class="pagination-link button-light" href="#">10</a>
                 </li>
             </ol>
         </main>
@@ -248,7 +264,7 @@
                 <label class="visually-hidden" for="email">Email</label>
                 <input class="subscription-form-window" type="email" id="email" placeholder="Ваш e-mail"
                     name="subscribe-email" required>
-                <button class="button button-subscribe" type="submit">Подписаться</button>
+                <button class="button button-subscribe button-light" type="submit">Подписаться</button>
             </form>
         </section>
         </main>
@@ -258,23 +274,23 @@
                 <h2 class="visually-hidden">Соцсети</h2>
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
-                        <a class="button" href="https://vk.com/htmlacademy">
+                        <a class="button social-link social-link-vk" href="https://vk.com/htmlacademy">
                             <span class="visually-hidden">Вконтакте.</span>
                         </a>
                     </li>
 
                     <li class="footer-social-item">
-                        <a class="button" href="https://t.me/htmlacademy">
+                        <a class="button social-link social-link-tg" href="https://t.me/htmlacademy">
                             <span class="visually-hidden">Телеграм.</span>
                         </a>
                     </li>
 
                     <li class="footer-social-item">
-                        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                        <a class="button social-link social-link-youtube"
+                            href="https://www.youtube.com/user/htmlacademyru">
                             <span class="visually-hidden">Ютуб.</span>
                         </a>
                     </li>
-                </ul>
             </section>
 
             <section class="phone">
